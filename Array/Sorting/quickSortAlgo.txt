@@ -1,0 +1,17 @@
+Partitioning Step:
+
+1.You start with pivot = arr[low].
+2.You initialize two pointers: i (starting from low + 1) and j (starting from high).
+3.i moves to the right until it finds an element greater than or equal to the pivot.
+4.j moves to the left until it finds an element less than the pivot.
+5.If i < j, you swap arr[i] and arr[j], effectively placing the smaller elements on the left and the larger ones on the right of the pivot.
+
+Final Pivot Placement:
+
+1.When i and j cross (meaning i >= j), the do-while loop breaks.
+2.You swap arr[low] with arr[j], positioning the pivot at index j.
+3.partition() then returns this final index (j), which is the correct position for the pivot in the sorted array.
+4.Recursive Calls in quickSort:
+
+After partitioning, the pivot is at its final position.
+The quickSort function is called recursively on the left (low to partitionIndex - 1) and right (partitionIndex + 1 to high) subarrays.
