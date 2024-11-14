@@ -1,0 +1,5 @@
+1. Initialize position with 1. [int position =1]
+2. Assign a temporary node to the head. [temp = head]
+3. Start a while loop until the next of temp is NULL. And increase the position by one in every round.
+4. Check if the data of temp is equal to the given value (key) then return the position 
+5. Return -1 if node is not found.

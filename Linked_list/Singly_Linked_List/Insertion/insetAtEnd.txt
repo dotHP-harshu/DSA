@@ -1,0 +1,8 @@
+1. Make a new Node.
+2. Set the 'given value' to the value of new node. [newNode->value = value;]
+3. Set the NULL to the next of new node. Because it is the last node of list. [newNode->next = NULL]
+4. Check if list is empty means head is NULL.
+5. If head == NULL then update the head with new node.
+6. Else make a new temporary node that will find the last node of list before insert, so that new node could connect it.
+7. Start a while loop until the next of temp node is NULL. Then set the last node to temp node.
+8. Set the next of last node to new node. [temp->next = newNode]

@@ -1,0 +1,12 @@
+---- Here temp is a node that will be removed ----
+1. Check if list is empty.
+2. Assign head to a temporary node. [temp = head]
+3. Check if position is one 
+        -Update the head to the next node of temp .[head = temp->next ]
+        -free the temp (deallocate the temp)
+        -retun
+4. Define another node that contain previous node of temp
+5. Find the previous node and temp node using for loop
+6. Check if temp is NULL then print error
+7. Else connect previous and next node of temp . [previous->next = temp->next]
+8. And free temp (deallocate).

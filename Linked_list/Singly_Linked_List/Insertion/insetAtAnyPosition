@@ -1,0 +1,12 @@
+1. Make a new Node.
+2. Assign the data to value or set value to the data of new node. [new_node->data = value]
+3. Check if position is 1 then 
+        - Set the head to the next of new node.
+        - Update the head to new node.
+        - And return so that function could end.
+4. Make a temporary node and assign head to it. [temp = head]
+5. Start a loop from 1 to position-1 and assign the (position-1)th node to temp. [temp = temp->next] and now temp is the (position-1)th node
+6. Check if the temp node is NULL then free the new node (deallocate the node).
+7. Else 
+        - Set the next of temp to the next of new node [new_node->next = temp->next]
+        - Set the new node to the next of temp node [temp->next = new_node]

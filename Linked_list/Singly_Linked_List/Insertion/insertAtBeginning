@@ -1,0 +1,4 @@
+1. Make a new node.
+2. Set the given value to the value of new node. [new_node->value = value]
+3. Set the head to the next node of new node. [new_node->next = head]
+4. Update the head to the new node means after inseting the new node will be head. [head = new_node]
