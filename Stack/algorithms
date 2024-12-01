@@ -1,0 +1,37 @@
+Push:-
+        -- Check if the stack is full or overflow (top == MAX-1)
+            - Print element can not be pushed and return
+        --  Increment top by 1
+        -- Assign the value to the array of stack (stack->arr[stack->top] = value)
+        -- Exit
+
+
+Pop:-
+        -- Check if the stack is empty or underflow(top == -1)
+            - Print element can not be poped and return
+        -- Retrieve the top element 
+        -- Decrement top by 1
+        -- Return the retrieve element 
+        -- Exit
+
+isFull:-
+        -- Check if
+            - Top is equal to -1 (top == -1)
+                Return true (Stack is empty)
+        -- else 
+            -Return false( Stack is not empty)
+        -- Exit
+
+isFull:-
+        -- Check if
+            - Top is equal to MAX-1 (top == MAX-1)
+                Return true (Stack is full)
+        -- else 
+            -Return false( Stack is not full)
+        -- Exit
+
+Peek:-
+        -- Check if stack is empty or underflow ( top == -1)
+            - Print element can not be retrieved and return
+        -- Retrieve return the retrieved element (stack->arr[stack->top])
+        -- Exit
