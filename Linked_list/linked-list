@@ -1,0 +1,16 @@
+What is a Linked List?
+---->A linked list is a linear data structure where each element, called a node, contains two parts:
+            Data: The actual value stored in the node.
+            Pointer (Next): A reference (or link) to the next node in the list.
+
+    Unlike arrays, linked lists do not store elements in contiguous memory locations. Each node points to the next, allowing for more flexible memory usage.
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Why Use Linked Lists?
+---->Dynamic Size: Unlike arrays, linked lists can grow and shrink in size by allocating and deallocating memory as needed.
+    Efficient Insertions/Deletions: Inserting or deleting nodes is more efficient than in arrays, as we only need to update pointers rather than shifting elements.
+    
+---->Basic Types of Linked Lists
+    Singly Linked List: Each node points to the next node, and the last node points to NULL.
+    Doubly Linked List: Each node has two pointers: one to the next node and one to the previous node.
+    Circular Linked List: The last node points back to the first node, creating a circular structure.
