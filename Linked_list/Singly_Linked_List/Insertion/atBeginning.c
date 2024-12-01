@@ -26,6 +26,7 @@ void printList()
         printf("%d-> ", current->value);
         current = current->next;
     }
+    printf("null\n");
 }
 
 int main()

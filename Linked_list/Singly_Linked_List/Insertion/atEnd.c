@@ -36,6 +36,15 @@ void insert(int value)
         temp->next = newNode;
     }
 }
+void beginning(int value)
+{
+    // make a new node
+    struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
+
+    newNode->value = value; // set the given value to the value of new Node
+    newNode->next = head;   // set the next to the head
+    head = newNode;         // update the head to the new node
+}
 
 void printList()
 {
@@ -46,6 +55,7 @@ void printList()
         printf("%d-> ", current->value);
         current = current->next;
     }
+    printf("NULL\n");
 }
 
 int main()
